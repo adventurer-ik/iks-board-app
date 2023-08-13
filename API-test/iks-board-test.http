@@ -6,3 +6,12 @@
 
 ### GET 요청 보내기
 GET {{server}}/boards
+
+### POST
+POST {{server}}/boards
+Content-Type: application/json
+
+{    
+    "title": "first IK",
+    "description": "최초의 익" 
+}
