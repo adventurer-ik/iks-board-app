@@ -15,3 +15,16 @@ Content-Type: application/json
     "title": "first IK",
     "description": "최초의 익" 
 }
+
+### id 조회
+GET {{server}}/boards/23cff420-3997-11ee-ac15-f3e39e6196da
+### 삭제
+DELETE  {{server}}/boards/2e56c460-3996-11ee-b752-e9378b977782
+
+### 수정
+PATCH {{server}}/boards/23cff420-3997-11ee-ac15-f3e39e6196da/status
+Content-Type: application/json
+
+{
+    "status": "PRIVATE"
+}
