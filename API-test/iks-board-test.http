@@ -12,19 +12,20 @@ POST {{server}}/boards
 Content-Type: application/json
 
 {    
-    "title": "first IK",
-    "description": "최초의 익" 
+    "title": "내 이름은 익.",
+    "description": "열심히 나아가보자" 
 }
 
 ### id 조회
-GET {{server}}/boards/23cff420-3997-11ee-ac15-f3e39e6196da
+GET {{server}}/boards/e05734f0-39a6-11ee-aaeb-e56d4f569c2f
+
 ### 삭제
 DELETE  {{server}}/boards/2e56c460-3996-11ee-b752-e9378b977782
 
 ### 수정
-PATCH {{server}}/boards/23cff420-3997-11ee-ac15-f3e39e6196da/status
+PATCH {{server}}/boards/e05734f0-39a6-11ee-aaeb-e56d4f569c2f/status
 Content-Type: application/json
 
 {
-    "status": "PRIVATE"
+    "status": "private"
 }
