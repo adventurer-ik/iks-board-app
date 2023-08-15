@@ -13,7 +13,7 @@ import { BoardsService } from './boards.service';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { BoardStatus } from './board-status.enum';
 import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe';
-import { Board } from './boards.entitity';
+import { Board } from './board.entity';
 
 @Controller('boards')
 export class BoardsController {
@@ -29,6 +29,10 @@ export class BoardsController {
   // createBoard(@Body() createBoardDto: CreateBoardDto) {
   //   return this.boardService.createBoard(createBoardDto);
   // }
+  @Get('is-connected')
+  async isConnected(): Promise<boolean> {
+    return this.boardsService.isConnected();
+  }
 
   @Get('/:id')
   getBoardById(@Param('id') id: number): Promise<Board> {

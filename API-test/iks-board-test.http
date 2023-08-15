@@ -5,7 +5,7 @@
 @server = http://localhost:3000
 
 ### GET 요청 보내기
-GET {{server}}/boards
+GET {{server}}/boards/is-connected
 
 ### POST
 POST {{server}}/boards
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### id 조회
-GET {{server}}/boards/e05734f0-39a6-11ee-aaeb-e56d4f569c2f
+GET {{server}}/boards/111
 
 ### 삭제
 DELETE  {{server}}/boards/2e56c460-3996-11ee-b752-e9378b977782

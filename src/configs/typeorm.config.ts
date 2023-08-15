@@ -5,9 +5,10 @@ export const typeORMConfig: TypeOrmModuleOptions = {
   type: 'postgres',
   host: 'localhost',
   port: 5432,
+  logging: true,
   username: 'postgres',
   password: 'postgres',
-  database: 'iks-boards',
-  entities: [__dirname + '/../**/*.entity.{js, ts}'],
+  database: 'iksBoards',
+  entities: [__dirname + '/../**/*.entity.ts'],
   synchronize: true,
 };
