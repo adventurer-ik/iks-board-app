@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### id 조회
-GET {{server}}/boards/111
+GET {{server}}/boards/1
 
 ### 삭제
 DELETE  {{server}}/boards/2e56c460-3996-11ee-b752-e9378b977782
