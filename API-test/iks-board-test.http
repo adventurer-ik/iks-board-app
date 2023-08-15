@@ -5,7 +5,7 @@
 @server = http://localhost:3000
 
 ### GET 요청 보내기
-GET {{server}}/boards/is-connected
+GET {{server}}/boards/
 
 ### POST
 POST {{server}}/boards

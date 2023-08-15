@@ -1,18 +1,5 @@
-import {
-  Body,
-  Controller,
-  Delete,
-  Get,
-  Param,
-  Patch,
-  Post,
-  UsePipes,
-  ValidationPipe,
-} from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { BoardsService } from './boards.service';
-import { CreateBoardDto } from './dto/create-board.dto';
-import { BoardStatus } from './board-status.enum';
-import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe';
 import { Board } from './board.entity';
 
 @Controller('boards')
@@ -29,10 +16,6 @@ export class BoardsController {
   // createBoard(@Body() createBoardDto: CreateBoardDto) {
   //   return this.boardService.createBoard(createBoardDto);
   // }
-  @Get('is-connected')
-  async isConnected(): Promise<boolean> {
-    return this.boardsService.isConnected();
-  }
 
   @Get('/:id')
   getBoardById(@Param('id') id: number): Promise<Board> {

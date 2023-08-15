@@ -1,23 +1,18 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { BoardStatus } from './board-status.enum';
-import { CreateBoardDto } from './dto/create-board.dto';
-import { InjectRepository } from '@nestjs/typeorm';
 import { BoardRepository } from './board.repository';
 import { Board } from './board.entity';
-import { getConnection } from 'typeorm';
+import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class BoardsService {
-  constructor(private boardRepository: BoardRepository) {}
-
-  async isConnected(): Promise<boolean> {
-    const connection = getConnection();
-    return connection.isConnected;
-  }
+  constructor(
+    @InjectRepository(BoardRepository)
+    private boardRepository: BoardRepository,
+  ) {}
 
   async getBoardById(id: number): Promise<Board> {
     console.log('service~~! id =', id);
-    const found = await this.boardRepository.findOneBy({ id });
+    const found = await this.boardRepository.findOne(id);
 
     if (!found) {
       throw new NotFoundException(`Can't find Board with id ${id}`);

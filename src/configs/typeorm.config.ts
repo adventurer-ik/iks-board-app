@@ -3,12 +3,12 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 export const typeORMConfig: TypeOrmModuleOptions = {
   //Database type
   type: 'postgres',
-  host: 'localhost',
+  host: '127.0.0.1',
   port: 5432,
   logging: true,
   username: 'postgres',
   password: 'postgres',
   database: 'iksBoards',
-  entities: [__dirname + '/../**/*.entity.ts'],
+  entities: [__dirname + '/../**/*.entity.{js,ts}'],
   synchronize: true,
 };
