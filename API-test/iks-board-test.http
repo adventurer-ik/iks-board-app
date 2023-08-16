@@ -17,15 +17,15 @@ Content-Type: application/json
 }
 
 ### id 조회
-GET {{server}}/boards/1
+GET {{server}}/boards/2
 
 ### 삭제
-DELETE  {{server}}/boards/2e56c460-3996-11ee-b752-e9378b977782
+DELETE  {{server}}/boards/1
 
 ### 수정
-PATCH {{server}}/boards/e05734f0-39a6-11ee-aaeb-e56d4f569c2f/status
+PATCH {{server}}/boards/2/status
 Content-Type: application/json
 
 {
-    "status": "private"
+    "status": "a"
 }
