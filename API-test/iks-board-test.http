@@ -36,6 +36,6 @@ POST {{server}}/auth/signup
 Content-Type: application/json
 
 {    
-    "username": "iks5",
+    "username": "iks555",
     "password": "Sniper123$" 
 }
