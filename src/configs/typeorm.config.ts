@@ -5,7 +5,6 @@ export const typeORMConfig: TypeOrmModuleOptions = {
   type: 'postgres',
   host: '127.0.0.1',
   port: 5432,
-  logging: true,
   username: 'postgres',
   password: 'postgres',
   database: 'iksBoards',
