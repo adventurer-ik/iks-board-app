@@ -29,3 +29,13 @@ Content-Type: application/json
 {
     "status": "a"
 }
+
+
+### POST
+POST {{server}}/auth/signup
+Content-Type: application/json
+
+{    
+    "username": "iks5",
+    "password": "Sniper123$" 
+}
