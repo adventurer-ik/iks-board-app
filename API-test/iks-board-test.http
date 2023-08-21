@@ -36,6 +36,25 @@ POST {{server}}/auth/signup
 Content-Type: application/json
 
 {    
-    "username": "iks555",
+    "username": "iks55",
+    "password": "Sniper123$asdf" 
+}
+
+### POST
+POST {{server}}/auth/signup
+Content-Type: application/json
+
+{    
+    "username": "iks55",
+    "password": "Sniper123$" 
+}
+
+
+### POST
+POST {{server}}/auth/signin
+Content-Type: application/json
+
+{    
+    "username": "iks55",
     "password": "Sniper123$" 
 }
