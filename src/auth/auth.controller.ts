@@ -11,9 +11,15 @@ export class AuthController {
     return this.authService.signUp(AuthCrentialsDto);
   }
 
+  // @Post('/signin')
+  // signIn(@Body(ValidationPipe) authCredentialsDto: AuthCrentialsDto) {
+  //   console.log(1);
+  //   return this.authService.signIn(authCredentialsDto);
+  // }
   @Post('/signin')
-  signIn(@Body(ValidationPipe) authCredentialsDto: AuthCrentialsDto) {
-    console.log(1);
+  signIn(
+    @Body(ValidationPipe) authCredentialsDto: AuthCrentialsDto,
+  ): Promise<{ accessToken: string }> {
     return this.authService.signIn(authCredentialsDto);
   }
 }
