@@ -17,22 +17,6 @@ export class AuthService {
     return this.userRepository.createUser(authCredentialsDto);
   }
 
-  // async signIn(authCredentialsDto: AuthCrentialsDto): Promise<string> {
-  //   const { username, password } = authCredentialsDto;
-  //   const user = await this.userRepository.findOne({ username });
-
-  //   // 로그 확인용
-  //   console.log(user);
-  //   console.log(password, user.password);
-  //   console.log(await bcrypt.compare(password, user.password));
-
-  //   if (user && (await bcrypt.compare(password, user.password))) {
-  //     return 'logIn Success';
-  //   } else {
-  //     throw new UnauthorizedException('logIn failed');
-  //   }
-  // }
-
   async signIn(authCredentialsDto: AuthCrentialsDto): Promise<{ accessToken: string }> {
     const { username, password } = authCredentialsDto;
     const user = await this.userRepository.findOne({ username });
