@@ -45,7 +45,7 @@ POST {{server}}/auth/signup
 Content-Type: application/json
 
 {    
-    "username": "iks55",
+    "username": "iks5",
     "password": "Sniper123$" 
 }
 
@@ -58,3 +58,8 @@ Content-Type: application/json
     "username": "iks55",
     "password": "Sniper123$" 
 }
+
+### POST
+POST {{server}}/auth/authTest
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Content-Type: application/json
