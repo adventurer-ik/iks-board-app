@@ -55,11 +55,11 @@ POST {{server}}/auth/signin
 Content-Type: application/json
 
 {    
-    "username": "iks55",
+    "username": "iks5",
     "password": "Sniper123$" 
 }
 
 ### POST
 POST {{server}}/auth/authTest
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlrczUiLCJpYXQiOjE2OTI4ODMxMzIsImV4cCI6MTY5Mjg4NjczMn0.DzmWi-cniU7D-wGBeLZV398zwjQNwsOUgCZTpwQq_2c
 Content-Type: application/json
