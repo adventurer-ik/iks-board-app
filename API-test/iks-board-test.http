@@ -6,14 +6,17 @@
 
 ### GET 요청 보내기
 GET {{server}}/boards/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlrczMiLCJpYXQiOjE2OTMxMzk3MzMsImV4cCI6MTY5MzE0MzMzM30.KdEdqTHbsP-bA2_My33QrtsYbd8AFecBaMkcQsTuwj4
+Content-Type: application/json
 
 ### POST
 POST {{server}}/boards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlrczMiLCJpYXQiOjE2OTMxMzk3MzMsImV4cCI6MTY5MzE0MzMzM30.KdEdqTHbsP-bA2_My33QrtsYbd8AFecBaMkcQsTuwj4
 Content-Type: application/json
 
 {    
-    "title": "내 이름은 익.",
-    "description": "열심히 나아가보자" 
+    "title": "내 이름은 무명.",
+    "description": "지구별 여행자" 
 }
 
 ### id 조회
@@ -23,21 +26,12 @@ GET {{server}}/boards/2
 DELETE  {{server}}/boards/1
 
 ### 수정
-PATCH {{server}}/boards/2/status
+PATCH {{server}}/boards/4/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlrczMiLCJpYXQiOjE2OTMxMzk3MzMsImV4cCI6MTY5MzE0MzMzM30.KdEdqTHbsP-bA2_My33QrtsYbd8AFecBaMkcQsTuwj4
 Content-Type: application/json
 
 {
-    "status": "a"
-}
-
-
-### POST
-POST {{server}}/auth/signup
-Content-Type: application/json
-
-{    
-    "username": "iks55",
-    "password": "Sniper123$asdf" 
+    "status": "PRIVATE"
 }
 
 ### POST
@@ -45,7 +39,7 @@ POST {{server}}/auth/signup
 Content-Type: application/json
 
 {    
-    "username": "iks5",
+    "username": "iks3",
     "password": "Sniper123$" 
 }
 
@@ -55,11 +49,11 @@ POST {{server}}/auth/signin
 Content-Type: application/json
 
 {    
-    "username": "iks5",
+    "username": "iks3",
     "password": "Sniper123$" 
 }
 
 ### POST
 POST {{server}}/auth/authTest
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlrczUiLCJpYXQiOjE2OTI4ODMxMzIsImV4cCI6MTY5Mjg4NjczMn0.DzmWi-cniU7D-wGBeLZV398zwjQNwsOUgCZTpwQq_2c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImlrczMiLCJpYXQiOjE2OTMxMzk3MzMsImV4cCI6MTY5MzE0MzMzM30.KdEdqTHbsP-bA2_My33QrtsYbd8AFecBaMkcQsTuwj4
 Content-Type: application/json
